@@ -64,6 +64,8 @@
    */
   export let initialPageIndex = 0
 
+  export let tapItem
+
   /**
    * Transition duration (ms)
    */
@@ -426,7 +428,7 @@
   } 
   function handleTapped(event) {
     focused = !focused
-  } 
+  }
 </script>
 
 <div class="sc-carousel__carousel-container">
@@ -450,7 +452,7 @@
       on:hovered={handleHovered}
 
       use:tappable
-      on:tapped={handleTapped}
+      on:tapped={tapItem}
     >
       <div
         class="sc-carousel__pages-container"
