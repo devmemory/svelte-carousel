@@ -37,6 +37,7 @@
   }
   .sc-carousel-dot__dot_active {
     opacity: 0.7;
+    background-color: #0059ff;
 
     height: var(--sc-active-dot-size);
     width: var(--sc-active-dot-size);
